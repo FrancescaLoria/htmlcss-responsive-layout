@@ -200,6 +200,65 @@ section.third .card:not(:first-child) {
 /* /responsive mobile */
 /* /third section */
 
+/* section fourth */
+section.fourth{
+    padding-bottom: 30px;
+    background-color: #9792E4;
+}
+
+section.fourth .card{
+    /* debug */
+    height: 200px;
+    /* debug */
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* responsive tablet */
+@media screen and (min-width: 768px) {
+    section.fourth .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.fourth .cards-container .col{
+        margin: 0 15px;
+        width: calc(50% - 30px);
+    }
+
+}
+/* /responsive tablet */
+
+/* responsive desktop */
+
+@media screen and (min-width: 992px) {
+    section.fourth .cards-container .col{
+        width: calc(100% / 3 - 30px);
+    }
+}
+/* /responsive desktop */
+/* /section fourth */
+
+/* section fifth */
+section.fifth {
+    padding-bottom: 30px;
+}
+
+section.fifth .card {
+    padding: 10px;
+    background-color: red;
+}
+
+/* responsive tablet */
+@media screen and (min-width: 768px) {
+    section.fifth .container{
+        display: flex;
+    }
+
+}
+/* /responsive tablet */
+/* /section fifth */
 
 /* /main */
 
