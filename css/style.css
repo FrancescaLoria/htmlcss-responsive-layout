@@ -20,9 +20,17 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+
+section {
+    padding-top: 50px;
+}
+
+.mg {
+    margin-top: 20px;
+}
 /* layout */
 .container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -61,3 +69,59 @@ header {
 }
 
 /* /header */
+
+/* main */
+section.first .col {
+    width: 100%;
+    background-color: #B5DDFF;
+    /* debug */
+    height: 350px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+section.first .col:first-child {
+    height: 500px;
+    padding: 10px;
+}
+
+.first .card {
+    /* debug */
+    height: 140px;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+/* tablet version */
+@media screen and (min-width: 768px) {
+    section.first .col {
+        width: calc(100% / 3 - 20px);
+        margin: 0 10px;
+        margin-bottom: 10px;
+        /* debug */
+        
+    }
+    
+    section.first .col:first-child {
+        width: calc( 100% / 3 * 2 - 20px);
+        margin-bottom: 10px;
+    }
+
+}
+
+/* desktop version */
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* /main */
+
+
