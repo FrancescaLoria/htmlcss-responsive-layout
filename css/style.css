@@ -262,10 +262,19 @@ section.fifth .card {
 
 /* section sixth */
 section.sixth{
+    padding-bottom: 30px;
     background-color: #9792E4;
 }
 /* /section sixth */
 
 /* /main */
+
+/* footer */
+footer{
+    padding: 20px 0;
+    color: white;
+    background-color: black;
+}
+/* /footer */
 
 
