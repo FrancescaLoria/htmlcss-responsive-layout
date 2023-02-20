@@ -1,0 +1,63 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+/* utility */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* layout */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: #0084FD;
+    height: 60px;
+    color: white;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: 20px;
+    
+}
+
+.menu li{
+    margin-right: 15px;
+}
+
+.menu ul{
+    display: none;
+}
+
+/* RESPONSIVE */
+
+/* display desktop */
+@media screen and (min-width: 992px) {
+    .menu ul {
+        display: flex;
+    }
+}
+
+/* /header */
