@@ -71,23 +71,24 @@ header {
 /* /header */
 
 /* main */
+/* first section */
 section.first .col {
     width: 100%;
     background-color: #B5DDFF;
     /* debug */
-    height: 350px;
+    /* height: 350px; */
     padding: 10px;
     border-radius: 20px;
 }
 
 section.first .col:first-child {
-    height: 500px;
+    /* height: 500px; */
     padding: 10px;
 }
 
-.first .card {
+section.first .card {
     /* debug */
-    height: 140px;
+    /* height: 140px; */
     background-color: white;
     margin-bottom: 30px;
     padding: 10px;
@@ -118,8 +119,86 @@ section.first .col:first-child {
         width: 70%;
         margin: 0 auto;
     }
+
+    section.first .col:first-child{
+        display: flex;
+    }
+
+    section.first .col:first-child .card{
+        width: 50%;
+    }
+}
+/* /first section */
+
+/* second section */
+section.second {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    background-color: #9792E4;
 }
 
+section.second .card:nth-child(2) {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 992px) {
+
+    section.second .card{
+        width: 50%;
+    }
+}
+/* /second section */
+
+/* third section */
+section.third {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+section.third .card{
+    margin-bottom: 30px;
+}
+
+section.third .card .text-container{
+    margin-top: 20px;
+}
+
+section.third .card:not(:first-child) {
+    background-color: #9792E4;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* responsive tablet */
+@media screen and (min-width: 768px) {
+    section.third .col .card:not(:first-child) {
+        display: flex;
+        
+    }
+
+    section.third .img-container {
+        width: 30%;
+        
+    }
+    
+    section.third .card .text-container{
+        margin-top: 0;
+    }
+
+}
+/* /responsive tablet */
+
+/* responsive mobile */
+@media screen and (min-width: 992px) {
+
+    section.second .card{
+        width: 50%;
+    }
+}
+/* /responsive mobile */
+/* /third section */
 
 
 /* /main */
