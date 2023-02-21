@@ -381,6 +381,11 @@ section.fourth .card{
     section.fourth .cards-container .col{
         width: calc(100% / 3 - 30px);
     }
+
+    .fourth .title-card {
+        color: white;
+        text-align: center;
+    }
 }
 /* /responsive desktop */
 /* /section fourth */
@@ -404,16 +409,63 @@ section.fifth .card {
     margin-top: 20px;
 }
 
+.fifth img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    
+} 
+
+.fifth .title-card {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.fifth .button {
+    background-color:#9792E4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.fifth .fa-linkedin {
+    margin-right: 5px;
+}
+
+.fifth .fa-quote-left {
+    color:#9792E4;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 105px;
+}
+
+.fifth .position {
+    position: relative;
+}
+
 /* responsive tablet */
 @media screen and (min-width: 768px) {
     section.fifth .container{
         display: flex;
     }
 
-    .fourth .title-card {
-        color: white;
-        text-align: center;
+    .fifth .col-one {
+        width: 60%;
     }
+    
+    .fifth. .col-one{
+        width: 50%;
+    }
+
+    .fifth .col-two{
+        width: 50%;
+    }
+        
 
 }
 /* /responsive tablet */
