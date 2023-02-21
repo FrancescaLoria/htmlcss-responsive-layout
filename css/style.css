@@ -132,6 +132,7 @@ section.first .card-img {
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
+    display: inline-block;
 }
 
 .fa-apple {
@@ -210,8 +211,29 @@ section.second .card:nth-child(2) {
 
 @media screen and (min-width: 992px) {
 
+    .container {
+        width: 60%;
+    }
+
     section.second .card{
         width: 50%;
+    }
+
+    section.second .card:nth-child(2) {
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        color: black;
+        width: calc( 100% / 2 - 20px);
+        margin-left: 20px;
+        margin-top: 120px;
+        text-align: center;
+
+    }
+
+    section.second .card:nth-child(2) img {
+        max-height: 180px;
+        margin: 0 auto;
     }
 }
 /* /second section */
@@ -224,16 +246,37 @@ section.third {
 
 section.third .card{
     margin-bottom: 30px;
+    text-align: center;
 }
 
 section.third .card .text-container{
     margin-top: 20px;
 }
 
+.third .title-card {
+    color: #9792E4
+}
+
+.third .text-paragh {
+    color: black;
+}
+
+.third img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+} 
+
+.testimonial {
+    font-weight: 600;
+}
+
 section.third .card:not(:first-child) {
     background-color: #9792E4;
     border-radius: 20px;
     padding: 10px;
+    color: white
 }
 
 /* responsive tablet */
@@ -252,17 +295,23 @@ section.third .card:not(:first-child) {
         margin-top: 0;
     }
 
+    section.third .card .text-container{
+        margin-top: 35px;
+        text-align: left;
+        margin-left: 15px;
+    }
+
 }
 /* /responsive tablet */
 
-/* responsive mobile */
+/* responsive deskstop */
 @media screen and (min-width: 992px) {
 
     section.second .card{
         width: 50%;
     }
 }
-/* /responsive mobile */
+/* /responsive deskstop */
 /* /third section */
 
 /* section fourth */
@@ -272,12 +321,43 @@ section.fourth{
 }
 
 section.fourth .card{
-    /* debug */
-    height: 200px;
-    /* debug */
     background-color: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
+    color: #9792E4;
+}
+
+.fourth .title-card {
+    color: white;
+}
+
+.fourth .number {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.fourth .subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px
+}
+
+.fourth .text-paragh {
+    color: #9792E4;
+    margin-top: 20px;
+}
+
+.fourth .button {
+    background-color:#9792E4;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 /* responsive tablet */
@@ -312,13 +392,27 @@ section.fifth {
 
 section.fifth .card {
     padding: 10px;
-    background-color: red;
+    
+}
+
+.fifth .title-card {
+    color:#9792E4;
+    font-size: 35px;
+}
+
+.fifth .text-paragh {
+    margin-top: 20px;
 }
 
 /* responsive tablet */
 @media screen and (min-width: 768px) {
     section.fifth .container{
         display: flex;
+    }
+
+    .fourth .title-card {
+        color: white;
+        text-align: center;
     }
 
 }
